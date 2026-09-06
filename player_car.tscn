@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://e7gmw2iheavw"]
+
+[ext_resource type="Script" uid="uid://c0thd3wgcpv4f" path="res://scripts/player_car.gd" id="1_dnlqt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ae7bu"]
+size = Vector2(20, 44)
+
+[node name="PlayerCar" type="CharacterBody2D"]
+script = ExtResource("1_dnlqt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ae7bu")
+
+[node name="Camera2D" type="Camera2D" parent="."]

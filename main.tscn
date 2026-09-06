@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://cw6m7rcvldcpr"]
+[gd_scene load_steps=3 format=3 uid="uid://cw6m7rcvldcpr"]
+
+[ext_resource type="Script" uid="uid://01r5qytqtpgr" path="res://scripts/main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://e7gmw2iheavw" path="res://player_car.tscn" id="1_ig7tw"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_0xm2m")
+
+[node name="PlayerCar" parent="." instance=ExtResource("1_ig7tw")]
+acceleration = 1000.0
+max_forward_speed = 800.0
